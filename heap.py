@@ -1,3 +1,4 @@
+# implementation of heep data structure, then using it to implement heap sort.
 def heap_sort(nums):
     if len(nums) <= 1:
         return nums
@@ -6,13 +7,13 @@ def heap_sort(nums):
     while end >= 0:
         nums[0], nums[end] = nums[end], nums[0]
         end -= 1
-        siftDown(nums, 0, end)
+        shiftDown(nums, 0, end)
     
     
 def heapify(nums, end):
     start = len(nums) // 2
     while start >= 0:
-        siftDown(nums, start, end)
+        shiftDown(nums, start, end)
         start -= 1
         
 def shiftDown(nums, start, end):

@@ -1,4 +1,4 @@
-6. ZigZag Conversion
+"""6. ZigZag Conversion
 
 The string "PAYPALISHIRING" is written in a zigzag pattern on a given number of rows like this: (you may want to display this pattern in a fixed font for better legibility)
 
@@ -13,6 +13,7 @@ convert("PAYPALISHIRING", 3) should return "PAHNAPLSIIGYIR".
 
 怎么写出bug free的code，这个题的主要注意点在，如果行的数目大于s的长度，
 在添加每行的index的时候，需要考虑超出了s长的情况。
+""" 
 
 class Solution(object):
     def convert(self, s, numRows):
