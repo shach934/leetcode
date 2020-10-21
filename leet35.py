@@ -1,3 +1,4 @@
+"""
 35. Search Insert Position
 
 Given a sorted array and a target value, return the index if the target is found. 
@@ -21,6 +22,7 @@ Example 1:
 
 Input: [1,3,5,6], 0
 Output: 0
+"""
 
 class Solution(object):
     def searchInsert(self, nums, target):

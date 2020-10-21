@@ -8,7 +8,7 @@ Suppose an array sorted in ascending order is rotated at some pivot unknown to y
 You are given a target value to search. If found in the array return its index, otherwise return -1.
 
 You may assume no duplicate exists in the array.
-"""
+""
 
 class Solution(object):
     def search(self, nums, target):

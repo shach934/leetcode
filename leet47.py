@@ -1,3 +1,4 @@
+"""
 47. Permutations II
 
 Given a collection of numbers that might contain duplicates, return all possible unique permutations.
@@ -12,6 +13,7 @@ For example,
 
 和普通的全排列不同的地方在于，每个数字被交换到前面之前，检查在他之前有没有相同的数字已经被交换到前面去过
 如果去过，那就不能再交换了！！
+"""
 
 class Solution(object):
     def permuteUnique(self, nums):

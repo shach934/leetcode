@@ -1,4 +1,4 @@
-50. Pow(x, n)
+"""50. Pow(x, n)
 Implement pow(x, n).
 
 
@@ -10,6 +10,7 @@ Example 2:
 
 Input: 2.10000, 3
 Output: 9.26100
+"""
 
 class Solution(object):
     def myPow(self, x, n):

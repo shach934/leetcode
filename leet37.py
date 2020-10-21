@@ -1,3 +1,4 @@
+"""
 37. Sudoku Solver
 
 Write a program to solve a Sudoku puzzle by filling the empty cells.
@@ -15,6 +16,7 @@ Empty cells are indicated by the character '.'.
  [".",".",".","2","7","5","9",".","."]]
 
 You may assume that there will be only one unique solution.
+"""
 
 class Solution:
     def solveSudoku(self, board):

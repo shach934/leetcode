@@ -1,3 +1,4 @@
+"""
 49. Group Anagrams
 
 Given an array of strings, group anagrams together.
@@ -11,6 +12,7 @@ Return:
   ["bat"]
 ]
 Note: All inputs will be in lower-case.
+"""
 
 class Solution(object):
     def groupAnagrams(self, strs):
@@ -32,13 +34,14 @@ class Solution(object):
         for i in dic.items():
             ret.append(i[1])
         return ret
-        
+"""    
 第一个版本类似于bucket sort， On的算法
 第二个版本先排序，然后再放到dict里面去 O nlogn的算法
 但是第二个比第一个快很多。
 怀疑是由于单词的长度比26要短很多造成的。
-       
-class Solution(object):
+"""
+
+class Solution2(object):
     def groupAnagrams(self, strs):
         """
         :type strs: List[str]

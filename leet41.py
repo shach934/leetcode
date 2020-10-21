@@ -1,3 +1,4 @@
+"""
 41. First Missing Positive
 
 Given an unsorted integer array, find the first missing positive integer.
@@ -11,6 +12,7 @@ Your algorithm should run in O(n) time and uses constant space.
 这类问题，需要在原地，不能用任何的space，那么能用的就只能是原来的数组内容了。
 只能通过修改数组内容来达到目的。根据题意，需要找的是1到n中哪个不在数组里面。
 其实是类似于bucket sort。使用1 到 n作为index，然后去找哪个数开始不在数组里面。
+"""
 
 class Solution(object):
     def firstMissingPositive(self, nums):

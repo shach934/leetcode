@@ -1,3 +1,4 @@
+"""
 45. Jump Game II
 
 Given an array of non-negative integers, you are initially positioned at the first index of the array.
@@ -11,10 +12,10 @@ Given array A = [2,3,1,1,4]
 
 The minimum number of jumps to reach the last index is 2. (Jump 1 step from index 0 to 1, then 3 steps to the last index.)
 
-""" 
 这个题目的关键点在于，根本不需要每个点都更新记录其到达的步数，因为从一个点出发，能够到达的点是连在一起的。
 所以每步能够走的点一定是连在一起，位于左侧的，需要做的就是每次记录该步能够走的最远的位置。等到这个位置到达了
 最右边，就可以返回了。
+
 """
 
 class Solution(object):
@@ -26,7 +27,7 @@ class Solution(object):
         curr_max, level, last_reach, idx = 0, 0, 0, 0
         while curr_max < len(nums) - 1:
             for i in range(idx, last_reach+1):
-                curr_max = max(curr_max, i + A[i])
+                curr_max = max(curr_max, i + nums[i])
             level += 1
             idx = last_reach + 1
             last_reach = curr_max
@@ -34,7 +35,7 @@ class Solution(object):
 
 
 """
-# BFS 也不够快，需要33s左右。避免了一些重复，但是还不够快。
+# BFS not quick enough, it takes 33 seconds
 class Solution(object):
     def jump(self, nums):
 

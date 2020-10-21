@@ -1,3 +1,4 @@
+"""
 38. Count and Say
 
 The count-and-say sequence is the sequence of integers with the first five terms as following:
@@ -22,6 +23,7 @@ Example 2:
 
 Input: 4
 Output: "1211"
+"""
 
 class Solution(object):
     def countAndSay(self, n):

@@ -1,3 +1,4 @@
+"""
 36. Valid Sudoku
 
 Determine if a Sudoku is valid, according to: Sudoku Puzzles - The Rules.
@@ -19,6 +20,7 @@ A partially filled sudoku which is valid.
 
 Note:
 A valid Sudoku board (partially filled) is not necessarily solvable. Only the filled cells need to be validated.
+"""
 
 class Solution(object):
     def isValidSudoku(self, board):

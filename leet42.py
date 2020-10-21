@@ -1,3 +1,4 @@
+"""
 42. Trapping Rain Water
 
 Given n non-negative integers representing an elevation map where the width of each bar is 1, compute how much water it is able to trap after raining.
@@ -14,6 +15,7 @@ The above elevation map is represented by array [0,1,0,2,1,0,1,3,2,1,2,1]. In th
 栈里面放的那个peak要高，并且那个放进去的peak也比左边的大坝低，说明新的这个peak能够和左边的大坝构成一个更高的水库把栈里面的这个peak淹了。就把他踢出去
 
 整体还是线性的
+"""
 
 class Solution(object):
     def trap(self, height):

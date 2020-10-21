@@ -1,3 +1,4 @@
+"""
 53. Maximum Subarray
 
 Find the contiguous subarray within an array (containing at least one number) which has the largest sum.
@@ -12,6 +13,8 @@ If you have figured out the O(n) solution, try coding another solution using the
 divide and conquer approach, which is more subtle.
 
 线性解法，用陈越在数据结构课程上的方法，算法导论上的线性法没看明白。。。。。
+"""
+
 class Solution(object):
     def maxSubArray(self, nums):
         """
@@ -26,11 +29,11 @@ class Solution(object):
             if this_sum < 0:
                 this_sum = 0
         return max_sum
-        
+"""        
 分治法，关键在于左右两边最大的那个，
 固定了中间，必然要跨越两边，所以就只有一头需要遍历了。变成了线性的
-
-class Solution(object):
+"""
+class Solution2(object):
     def maxSubArray(self, nums):
         """
         :type nums: List[int]
